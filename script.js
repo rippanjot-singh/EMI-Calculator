@@ -12,6 +12,8 @@ let emi = 0;
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
+    answer.innerHTML = "";
+    answer.innerHTML += `<h1 class="text-2xl font-bold">Answer</h1>`;
     let amt = Number(ammount.value);
     let dp = Number(downPayment.value);
     let rt = Number(rate.value);
