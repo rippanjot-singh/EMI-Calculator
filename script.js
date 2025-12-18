@@ -47,5 +47,5 @@ form.addEventListener('submit', (e) => {
             emi = p / n;
         }
     }
-    answer.innerHTML += `<br> <p> EMI: ${emi.toFixed(2)} </p> <br> <p> Down Payment: ${(amt * (dp / 100)).toFixed(2)} </p> <br> <p> Total Amount: ${emi * n.toFixed(2)} </p> <br> <p> Total Interest: ${emi * n.toFixed(2) - p.toFixed(2)} </p>`;
+    answer.innerHTML += `<br> <p> EMI: ${Math.round(emi)} </p> <br> <p> Down Payment: ${Math.round(amt * (dp / 100))} </p> <br> <p> Total Amount: ${Math.round(emi * n)} </p> <br> <p> Total Interest: ${Math.round(emi * n - p)} </p>`;
 });
